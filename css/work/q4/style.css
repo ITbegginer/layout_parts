@@ -1,17 +1,22 @@
 @charset "UTF-8";
 
-.q4_1_text {
+.q4_inline {
   display: inline-block;
 }
 
-.q4_1_position {
+.q4_text_center {
   text-align: center;
 }
 
-.q4_1_margin {
+/* text-align:centerは指定したブロック要素内にあるインライン要素を中央揃えにする。
+p要素はブロック要素であるため、このまま適用してもp要素内の文字のみがp要素の中央になるだけである。
+しかし、cssにてp要素をinline-blockに変えたので、p要素も中央揃えになる。 */
+
+.q4_margin {
   margin: 0 auto;
-  text-align: center;
 }
+/* ブロック要素であるp要素を中央揃えにするには、左右のmarginをautoにすることで
+左右均等にmarginをとることで実現する。さらにtext-align:centerを付与して文字を青枠内中央に配置している。 */
 
 .table_wrapper {
   display: table;
@@ -22,20 +27,16 @@
   text-align: center;
   vertical-align: middle;
 }
-
-.q4_2_table {
-  display: inline-block;
-}
+/* 垂直方向の中央揃えが出来るvertical-alignを適用するために、display:tableやtable-cellを使って
+スタイルを変更している。 */
 
 .flex_position {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.q4_2_flex {
-  text-align: center;
-}
+/* display:flexではレイアウトを操作でき、それを指定した要素の子要素に働きかける。
+justify-contentでは水平方向のレイアウト、align-itemsでは垂直方向のレイアウトを指定できる。 */
 
 .position_fixed_wrapper {
   position: relative;
@@ -48,7 +49,6 @@
   left: 0;
   right: 0;
   margin: auto;
-  text-align: center;
 }
 
 .position_variable_wrapper {
@@ -60,7 +60,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
+/* 要素をtopやleft位置指定で中央までずらす。これだけだと要素の左上が中央になっている。
+transform:translateで要素の半分の高さ、半分の幅分位置をずらすことで中央にもっていける。 */
+
 /* q4が終わったら
 q5のcssはq5フォルダの中のcssファイルに記述してください */

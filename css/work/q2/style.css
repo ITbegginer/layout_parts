@@ -5,30 +5,33 @@
   table-layout: fixed;
 }
 
-.table_header th, .data th {
+.q2_table th {
   font-size: 18px;
   line-height: 26px;
-  color: white;
+  color: #fff;
   background-color: #2244aa;
 }
 
-.data td {
+.q2_table td {
   text-align: center;
   font-size: 16px;
   line-height: 22px;
 }
 
-.table_header th, .data td, .data th {
-  border: solid 1px #dedede;
-  padding: 10px 0;
+.q2_table th, .q2_table td {
+  border: 1px solid #dedede;
+  padding: 10px;
 }
 
-.data tr:nth-child(2n) {
+.q2_table thead tr:nth-child(2n) {
   background-color: #ecf1f2;
 }
 
-.data tr:last-child {
-  border-top: dashed 2px #000;
+.q2_table tbody tr:last-child {
+  border-top: 2px dashed #000;
 }
+/* tbodyまで指定しないと、theadとtbodyそれぞれのlastchildが指定されるので
+表の上側にも破線が表れてしまう。 */
+
 /* q2が終わったら
 q3のcssはq3フォルダの中のcssファイルに記述してください */
