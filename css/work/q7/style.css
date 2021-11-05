@@ -1,1 +1,46 @@
 @charset "UTF-8";
+
+.q7_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* 画像とテキストを中央下端揃えにする */
+
+.q7_text_wrapper {
+  border-radius: 30px;
+  border: 5px solid #222;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 550px;
+  margin-left: 35px;
+  position: relative;
+}
+
+.q7_text_wrapper::before,
+.q7_text_wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  border: 20px solid transparent;
+}
+/* 三角部分の共通項目。同じ大きさ(40×20px)の三角形を作る。 */
+
+.q7_text_wrapper::before {
+  left: -38px;
+  border-right-color: #fff;
+  z-index: 2;
+}
+
+.q7_text_wrapper::after {
+  left: -45px;
+  border-right-color: #222;
+  z-index: 1;
+}
+/* 同じ大きさの黒三角と白三角をずらして配置し、白三角が上になるようにすることで吹き出しを実現している。 */
+
+.q7_text {
+  font-size: 16px;
+  word-break: break-all;
+}

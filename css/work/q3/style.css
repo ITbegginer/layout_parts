@@ -86,7 +86,7 @@
 }
 /* after疑似要素の親要素はbox8となるので、position:absoluteはbox8が基準となる。 */
 
-.q3_fixed_box {
+.q3_top_scroll {
   position: fixed;
   bottom: 50px;
   right: 50px;

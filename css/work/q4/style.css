@@ -38,7 +38,7 @@ p要素はブロック要素であるため、このまま適用してもp要素
 /* display:flexではレイアウトを操作でき、それを指定した要素の子要素に働きかける。
 justify-contentでは水平方向のレイアウト、align-itemsでは垂直方向のレイアウトを指定できる。 */
 
-.position_fixed_wrapper {
+.q4_relative {
   position: relative;
 }
 
@@ -49,10 +49,6 @@ justify-contentでは水平方向のレイアウト、align-itemsでは垂直方
   left: 0;
   right: 0;
   margin: auto;
-}
-
-.position_variable_wrapper {
-  position: relative;
 }
 
 .position_variable {
