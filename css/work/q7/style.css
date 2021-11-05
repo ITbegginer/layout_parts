@@ -28,15 +28,13 @@
 /* 三角部分の共通項目。同じ大きさ(40×20px)の三角形を作る。 */
 
 .q7_text_wrapper::before {
-  left: -38px;
-  border-right-color: #fff;
-  z-index: 2;
+  left: -45px;
+  border-right-color: #222;
 }
 
 .q7_text_wrapper::after {
-  left: -45px;
-  border-right-color: #222;
-  z-index: 1;
+  left: -38px;
+  border-right-color: #fff;
 }
 /* 同じ大きさの黒三角と白三角をずらして配置し、白三角が上になるようにすることで吹き出しを実現している。 */
 

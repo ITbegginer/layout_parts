@@ -22,16 +22,16 @@
 }
 /* 画像の共通項目 */
 
-.left-animation img {
+.zoom-animation img {
   transition-duration: 0.5s;
 }
 
-.left-animation img:hover {
+.zoom-animation img:hover {
   transform: scale(1.5);
 }
 /* 1.5倍に拡大 */
 
-.right-animation {
+.text-animation {
   position: relative;
 }
 
@@ -48,7 +48,7 @@
 このテキストボックスの高さや幅は画像サイズに依るので、サイズ指定を100%に。 */
 
 
-.right-animation p {
+.text-animation p {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -60,7 +60,7 @@
 }
 /* word-break: break-allにてサンプル通り単語の区切り等関係なく改行する。 */
 
-.right-animation:hover .q6_text_box {
+.text-animation:hover .q6_text_box {
   top: 0;
 }
 /* 画像にhoverしたら、テキストボックスのtopが100%から0になることによって

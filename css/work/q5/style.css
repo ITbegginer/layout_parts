@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.q5_inline_block {
+.q5_inline {
   display: inline-block;
 }
 
@@ -10,6 +10,9 @@
 
 .q5_float {
   float: left;
+}
+
+.q5_margin {
   margin-left: 60px;
 }
 
@@ -37,10 +40,6 @@
 }
 /* inline-blockで横並びにする際、意図しない余白が現れる。これは改行が原因らしく
 inline-blockの親要素に対しfont-size:0を指定し、子要素で改めてfont-sizeを指定すると余白がなくなる。 */
-
-.q5_inline {
-  margin-left: 60px;
-}
 
 .q5_flexbox {
   display: flex;
